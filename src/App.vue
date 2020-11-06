@@ -1,18 +1,12 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <router-view></router-view>
 </template>
 
-<script>
-import HelloWorld from "./components/HelloWorld.vue";
-import { provide } from "vue";
-export default {
-  name: "App",
-  components: {
-    HelloWorld,
-  },
+<script lang="ts">
+import { provide, defineComponent } from "vue";
+export default defineComponent({
   setup() {
-    provide("globalColor", "yellow");
+    provide("globalColor", "red");
   },
-};
+});
 </script>
