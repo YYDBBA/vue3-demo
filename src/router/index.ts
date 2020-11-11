@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory,createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 import Login from './../views/Login.vue'
 
 const router = createRouter({
@@ -8,13 +8,29 @@ const router = createRouter({
     component: Login
   },
   {
-    path: '/home',
-    component: ()=>import('./../views/Home.vue')
+    path: '/tabbar',
+    redirect: '/tabbar/home',
+    component: () => import('./../views/Tabbar.vue'),
+    children: [
+      {
+        path: '/tabbar/home',
+        component: () => import('./../views/tab-page/Home.vue')
+      }, {
+        path: '/tabbar/info',
+        component: () => import('./../views/tab-page/Info.vue')
+      }, {
+        path: '/tabbar/class',
+        component: () => import('./../views/tab-page/Class.vue')
+      }, {
+        path: '/tabbar/mine',
+        component: () => import('./../views/tab-page/Mine.vue')
+      },
+    ]
   },
   {
     path: '/video',
-    component: ()=>import('./../views/Video.vue')
+    component: () => import('./../views/Video.vue')
   }
-]
+  ]
 })
 export default router

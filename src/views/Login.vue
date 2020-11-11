@@ -11,7 +11,7 @@ export default defineComponent({
   setup(props) {
     const router = useRouter();
     const goHome = () => {
-      router.push("/home");
+      router.push("/tabbar");
     };
     return {
       goHome

@@ -1,44 +1,6 @@
 <template>
   <div class="h-swiper">
-    <van-swipe
-      @change="onChange"
-      autoplay="2000"
-      width="100%"
-      indicator-color="#fff"
-    >
-      <van-swipe-item>
-        <img class="banner" src="./../assets/banner1.jpg" alt="" />
-      </van-swipe-item>
-      <van-swipe-item>
-        <img class="banner" src="./../assets/banner2.jpg" alt="" />
-      </van-swipe-item>
-      <van-swipe-item>
-        <img class="banner" src="./../assets/banner3.jpg" alt="" />
-      </van-swipe-item>
-      <van-swipe-item>
-        <img class="banner" src="./../assets/banner4.png" alt="" />
-      </van-swipe-item>
-    </van-swipe>
-    <ul class="h-action">
-      <li
-        class="item"
-        v-for="(item, i) in actionList"
-        :key="i"
-        @click="goMore(item)"
-      >
-        <img class="icon" :src="item.url" alt="" />
-      </li>
-    </ul>
-    <van-tabbar v-model="active">
-      <van-tabbar-item badge="3">
-        <span>自定义</span>
-        <template #icon="props">
-          <img :src="props.active ? icon.active : icon.inactive" />
-        </template>
-      </van-tabbar-item>
-      <van-tabbar-item icon="search">标签</van-tabbar-item>
-      <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
-    </van-tabbar>
+    
   </div>
 </template>
 
