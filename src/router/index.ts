@@ -10,26 +10,26 @@ const router = createRouter({
   {
     path: '/tabbar',
     redirect: '/tabbar/home',
-    component: () => import('./../views/Tabbar.vue'),
+    component: () => import('/@/views/Tabbar.vue'),
     children: [
       {
         path: '/tabbar/home',
-        component: () => import('./../views/tab-page/Home.vue')
+        component: () => import('/@/views/tab-page/Home.vue')
       }, {
         path: '/tabbar/info',
-        component: () => import('./../views/tab-page/Info.vue')
+        component: () => import('/@/views/tab-page/Info.vue')
       }, {
         path: '/tabbar/class',
-        component: () => import('./../views/tab-page/Class.vue')
+        component: () => import('/@/views/tab-page/Class.vue')
       }, {
         path: '/tabbar/mine',
-        component: () => import('./../views/tab-page/Mine.vue')
+        component: () => import('/@/views/tab-page/Mine.vue')
       },
     ]
   },
   {
     path: '/video',
-    component: () => import('./../views/Video.vue')
+    component: () => import('/@/views/Video.vue')
   }
   ]
 })

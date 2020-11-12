@@ -10,13 +10,13 @@
 </template>
 
 <script lang="ts">
-import { reactive, ref } from "vue";
-export default {
+import { reactive, ref, defineComponent } from "vue";
+export default defineComponent({
   props: {},
   setup(props) {
     return {};
   },
-};
+});
 </script>
 <style scoped>
 </style>

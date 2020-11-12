@@ -42,49 +42,49 @@ export default defineComponent({
     const onChange = (index: number) => {};
     const actionList = [
       {
-        url: "./../../1music.svg",
+        url: "/@/image/1music.svg",
       },
       {
-        url: "./../../2通知.svg",
+        url: "/@/image/notifce.svg",
       },
       {
-        url: "./../../3赠送.svg",
+        url: "/@/image/zs.svg",
       },
       {
-        url: "./../../4购物车.svg",
+        url: "/@/image/shopcar.svg",
       },
       {
-        url: "./../../5记录.svg",
+        url: "/@/image/record.svg",
       },
       {
-        url: "./../../6设置.svg",
+        url: "/@/image/set.svg",
       },
       {
-        url: "./../../7视频.svg",
+        url: "/@/image/video.svg",
         path: "/video",
       },
       {
-        url: "./../../8电话.svg",
+        url: "/@/image/phone.svg",
       },
       {
-        url: "./../../9电影.svg",
+        url: "/@/image/movice.svg",
       },
       {
-        url: "./../../10档案.svg",
+        url: "/@/image/da.svg",
       },
     ];
     const swiperList = [
       {
-        url: "./../../banner1.jpg",
+        url: "/@/image/banner1.jpg",
       },
       {
-        url: "./../../banner2.jpg",
+        url: "/@/image/banner2.jpg",
       },
       {
-        url: "./../../banner3.jpg",
+        url: "/@/image/banner3.jpg",
       },
       {
-        url: "./../../banner4.png",
+        url: "/@/image/banner4.png",
       },
     ];
     const tabList = [
