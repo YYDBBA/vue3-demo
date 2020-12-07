@@ -12,6 +12,7 @@
       </template>
     </van-nav-bar>
     <video
+      autoplay
       src="https://www.w3school.com.cn/i/movie.ogg"
       controls
       width="375"

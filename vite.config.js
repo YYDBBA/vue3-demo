@@ -1,6 +1,6 @@
-const {resolve} = require('path')
+const { resolve } = require('path')
 module.exports = {
-  base:'./',
+  base: './',
   alias: {
     // 键必须以斜线开始和结束
     '/@/': resolve(__dirname, './src')
